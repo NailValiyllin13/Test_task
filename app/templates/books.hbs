@@ -1,0 +1,17 @@
+<h2>Доступный список книг:</h2>
+<table>
+  <tbody>
+	<tr>
+    <th align="center">Название</th>
+    <th align="center">Автор</th>
+    <th align="center">Количество страниц</th>
+	</tr>
+  {{#each model as |books|}}
+  <tr>
+  	<td align="center">{{books.Name}}</td>
+    <td align="center">{{books.Author}}</td>
+    <td align="center">{{books.Pages}}</td>
+  </tr>
+  {{/each}}
+  </tbody>
+</table>
